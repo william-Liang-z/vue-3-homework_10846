@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    max-width: 720px;
+    margin: 0 auto;
+}
+body {
+    margin:0 auto;
+    background:#fff;
+    font-family: "微软雅黑",Arial, Helvetica, sans-serif,\u5FAE\u8F6F\u96C5\u9ED1;
+    color:#333;
+    font-size: 14px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+ol, ul {
+    list-style: none;
+}
+/* 清理浮动 */
+.fn-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.fn-clear {
+    zoom: 1; /* for IE6 IE7 */
+}
+/* 设置内联, 减少浮动带来的bug */
+.fn-left, .fn-right {
+    display: inline;
+}
+.fn-left {
+    float: left;
+}
+.fn-right {
+    float: right;
+}
+.fn-textcenter {
+    text-align: center;
+}
+.fn-textright {
+    text-align: right;
+}
+
+
+.index-content {
+    width: 100%;
+}
+
+/* banner strat */
+.banner {
+    width: 100%;
+    position: relative;
+}
+.banner img {
+    width: 100%;
+}
+.banner-circle {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+.banner-circle li {
+    display: inline-block;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+.banner-circle .selected {
+    background-color: #fe8602;
+}
+/* .banner end */
+
+/* .nav start */
+.nav {
+    width: 100%;
+}
+.nav ul {
+    margin: 20px 0 0;
+}
+.nav-lists {
+    width: 23%;
+    display: inline-block;
+}
+.nav-lists .icon-lists {
+    padding: 11px;
+    color: #fff;
+    font-size: 33px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+}
+.nav-lists span {
+    color: #a2a2a2;
+    display: block;
+    margin: 15px 0;
+}
+.nav .nav-lists:nth-child(1) .icon-lists {
+    background: #19d5d6;
+}
+.nav .nav-lists:nth-child(2) .icon-lists {
+    background: #ff1054;
+}
+.nav .nav-lists:nth-child(3) .icon-lists {
+    background: #02a76a;
+}
+.nav .nav-lists:nth-child(4) .icon-lists {
+    background: #dd0dd1;
+}
+.nav .nav-lists:nth-child(5) .icon-lists {
+    background: #0294fa;
+}
+.nav .nav-lists:nth-child(6) .icon-lists {
+    background: #f54704;
+}
+.nav .nav-lists:nth-child(7) .icon-lists {
+    background: #ec9be0;
+}
+.nav .nav-lists:nth-child(8) .icon-lists {
+    background: #c7da0e;
+}
+/* .nav end */
+
+
+
+
+/* footer start */
+.footer {
+    width: 100%;
+    height: 60px;
+}
+.footer-lists {
+    width: 100%;
+    border: 1px solid #d5d5d5;
+    background-color: #a2dde3;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: #000;
+}
+.footer-bottom a:hover {
+    color: #000;
+}
+.footer-bottom li {
+    display: inline-block;
+    width: 24%;
+}
+.footer-bottom i {
+    font-size: 22px;
+    display: block;
+}
+.footer-bottom span {
+    display: block;
+}
+.footer-bottom a.selected {
+    color: #fe8602;
+}
+/* footer end */
